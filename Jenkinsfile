@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/mithunsh/springboot-app.git'
+                git branch: 'main',
+                    url: 'https://github.com/mithunsh/springboot-app.git'
             }
         }
 
